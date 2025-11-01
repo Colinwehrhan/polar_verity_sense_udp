@@ -1,0 +1,21 @@
+# Python virtual environment
+venv/
+
+# Python cache files
+__pycache__/
+*.pyc
+
+# VS Code user-specific settings
+.vscode/
+
+# Your personal backup folder
+Backup/
+
+# Any other generated files (like your 'test_udp_rec' file)
+test_udp_rec
+
+#touch designer
+.toe
+
+#lib
+lib/
