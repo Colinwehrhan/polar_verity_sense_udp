@@ -62,10 +62,10 @@ async def udp_listener():
                 message = data.decode('utf-8').strip()
                 console.print(f"[bold cyan]Received UDP message:[/bold cyan] {message} from {addr}")
                 
-                if message == "SENSOR:DETECTED":
+                if message == "SENSOR_STATE:DETECTED":
                     sensor_detected = True
                     console.print("[bold green]Sensor status: DETECTED - sending real BPM[/bold green]")
-                elif message == "SENSOR:NO_OBJECT":
+                elif message == "SENSOR_STATE:NO_OBJECT":
                     sensor_detected = False
                     console.print("[bold red]Sensor status: NO_OBJECT - sending 0 BPM[/bold red]")
                 else:
